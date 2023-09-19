@@ -31,5 +31,14 @@
         document.getElementById("var_a").textContent = a;
         document.getElementById("var_S").textContent = S;
     </script>
+    <script type="text/JavaScript">
+        function mudar(objeto,imagem) {
+            lam.src = imagem;
+        }
+
+    </script>
+    <a onmouseover="mudar('lam', 'img/lam.jpg')"
+    onmouseout="mudar('lam', 'img/lam.webp')">
+    <img src="img/lam.jpg" alt="" id="lam"></a>
 </body>
 </html>
