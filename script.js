@@ -3,13 +3,16 @@ function funcaoresposta(){
     var respostausuario = document.querySelector('input[name="resposta"]:checked');
     if(respostausuario){
     if(respostausuario.value === respostacorreta){
-        document.getElementById("retorno").textContent = "acerto viado";
+        document.getElementById("retorno").textContent = "acertou";
     }
     else{
-        document.getElementById("retorno").textContent = "erro viado";
+        document.getElementById("retorno").textContent = "errou";
     }
     }
     else{
-        document.getElementById("retorno").textContent = "seleciona uma";
+        document.getElementById("retorno").textContent = "tem que escolher uma";
 }
+}
+function mudar(objeto,imagem) {
+    lam.src = imagem;
 }
