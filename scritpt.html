@@ -4,121 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    <header class="grid_h">
 
-    <h1>calculadora</h1>
-    <h2>eu sei programar em JavaScript</h2>
-    <p>
-        <span id="var_so"></span>+
-        <span id="var_vo"></span>*
-        <span id="var_t"></span>+
-        <span id="var_a"></span>=
-        <span id="var_S"></span>
-    </p>
-    <script>
-        var S = 0;
-        var so = 7;
-        var vo = 9;
-        var t = 5;
-        var a = 2;
-        var c = vo*t;
-        var b = a*t*t/2;
-        S = so+c+b
-        document.getElementById("var_so").textContent = so;
-        document.getElementById("var_vo").textContent = vo;
-        document.getElementById("var_t").textContent = t;
-        document.getElementById("var_a").textContent = a;
-        document.getElementById("var_S").textContent = S;
-    </script>
-    
-    <form>
-        <h1>O que é a força elástica?</h1>  
-        <!-- 1 -->
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+    </header>
+    <main class="grid_m">
+        <h1>calculadora</h1>
+        <h2>eu sei programar em JavaScript</h2>
+        <p>
+            <span id="var_so"></span>+
+            <span id="var_vo"></span>*
+            <span id="var_t"></span>+
+            <span id="var_a"></span>=
+            <span id="var_S"></span>
+        </p>
+        <script>
+            var S = 0;
+            var so = 7;
+            var vo = 9;
+            var t = 5;
+            var a = 2;
+            var c = vo*t;
+            var b = a*t*t/2;
+            S = so+c+b
+            document.getElementById("var_so").textContent = so;
+            document.getElementById("var_vo").textContent = vo;
+            document.getElementById("var_t").textContent = t;
+            document.getElementById("var_a").textContent = a;
+            document.getElementById("var_S").textContent = S;
+        </script>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+        <form>
+            <h1>O que é a força elástica?</h1> <!-- 1 -->
+            <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
+            <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
+            <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
+            <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="correta"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>Qual é a unidade de medida da constante elástica de uma mola?</h1><!-- 2 -->
+            <input type="radio" name="resposta" value="errada"> Joules (J) <br>
+            <input type="radio" name="resposta"value="correta"> Newtons por metro (N/m) <br>
+            <input type="radio" name="resposta" value="errada"> Watts (W) <br>
+            <input type="radio" name="resposta" value="errada"> Quilogramas (kg).<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="correta"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>De acordo com a lei de Hooke, como a força elástica varia com a deformação de uma mola ideal?</h1><!-- 3 -->
+            <input type="radio" name="resposta" value="correta"> Varia linearmente. <br>
+            <input type="radio" name="resposta"value="errada"> Varia exponencialmente. <br>
+            <input type="radio" name="resposta" value="errada"> Não varia. <br>
+            <input type="radio" name="resposta" value="errada"> Varia inversamente.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>Quando uma mola é esticada, qual tipo de energia está associada à deformação elástica?</h1><!-- 4 -->
+            <input type="radio" name="resposta" value="errada">  Energia cinética. <br>
+            <input type="radio" name="resposta"value="errada"> Energia potencial gravitacional. <br>
+            <input type="radio" name="resposta" value="errada">  Energia térmica. <br>
+            <input type="radio" name="resposta" value="correta"> Energia potencial elástica.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="correta"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>Qual é a fórmula que descreve a força elástica em uma mola ideal de acordo com a lei de Hooke?</h1><!-- 5 -->
+            <input type="radio" name="resposta" value="errada">  F = mg. <br>
+            <input type="radio" name="resposta"value="correta">  F = kx. <br>
+            <input type="radio" name="resposta" value="errada">  F = ma. <br>
+            <input type="radio" name="resposta" value="errada"> F = pVg.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>O que acontece com a constante elástica de uma mola quando a mola é mais rígida?</h1><!-- 6 -->
+            <input type="radio" name="resposta" value="correta">  A constante elástica aumenta. <br>
+            <input type="radio" name="resposta"value="errada"> A constante elástica diminui. <br>
+            <input type="radio" name="resposta" value="errada">A constante elástica permanece a mesma. <br>
+            <input type="radio" name="resposta" value="errada">  A constante elástica se torna zero.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="correta"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>Qual é a unidade de medida da deformação em uma mola?</h1><!-- 7 -->
+            <input type="radio" name="resposta" value="errada">  Joules (J) <br>
+            <input type="radio" name="resposta"value="correta"> Metros (m). <br>
+            <input type="radio" name="resposta" value="errada"> Newtons por metro (N/m). <br>
+            <input type="radio" name="resposta" value="errada"> Radianos (rad).<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="correta"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
+            <h1>Quando uma mola é comprimida, em que direção ela exerce a força elástica?</h1><!-- 8 -->
+            <input type="radio" name="resposta" value="errada"> para cima <br>
+            <input type="radio" name="resposta"value="errada"> para baixo <br>
+            <input type="radio" name="resposta" value="correta">  Na direção da deformação. <br>
+            <input type="radio" name="resposta" value="errada"> Em qualquer direção.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-        <h1>O que é a força elástica?</h1>
-        <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-        <input type="radio" name="resposta"value="errada"> Uma força resultante da deformação de um objeto elástico. <br>
-        <input type="radio" name="resposta" value="correta"> Uma força que só ocorre em molas. <br>
-        <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-        <button type="button" onclick="funcaoresposta()">responder</button>
-        <p id="retorno"></p>
-    </form>
+            <h1>Qual é o objetivo principal da lei de Hooke em relação às molas?</h1><!-- 9 -->
+            <input type="radio" name="resposta" value="errada"> Descrever como as molas funcionam.<br>
+            <input type="radio" name="resposta"value="errada">  Descrever como a gravidade afeta as molas. <br>
+            <input type="radio" name="resposta" value="errada"> Descrever como as molas armazenam energia térmica. <br>
+            <input type="radio" name="resposta" value="correta"> Descrever a relação entre a força elástica e a deformação em molas.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
 
-    <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
-    onmouseout="mudar('lam', 'img/esticada.jpeg')">
-    <img src="img/apertada.jpeg" alt="" id="lam"></a>
+            <h1>O que acontece com a força elástica quando uma mola é esticada além do seu limite elástico?</h1><!-- 10 -->
+            <input type="radio" name="resposta" value="errada">  A força elástica continua a aumentar linearmente. <br>
+            <input type="radio" name="resposta"value="errada">A força elástica diminui. <br>
+            <input type="radio" name="resposta" value="correta">  A mola quebra. <br>
+            <input type="radio" name="resposta" value="errada"> A força elástica torna-se zero.<br>
+            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="retorno"></p>
+        </form>
+
+        <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
+        onmouseout="mudar('lam', 'img/esticada.jpeg')">
+        <img src="img/apertada.jpeg" alt="" id="lam"></a>
+    </main>
+    <aside class="grid_a"><!-- A tag <aside> é usada para criar uma seção lateral que contém conteúdo relacionado, como anúncios ou links de navegação. Neste caso, ele tem a classe "grid_a". -->
+        <div class="nav_mobile"><!-- Aqui, um <div> é usado para agrupar elementos relacionados e estilizá-los juntos. Ele tem a classe "nav_mobile". -->
+            <input type="checkbox" id="menu"> <!-- A tag <input> cria um campo de entrada. Neste caso, é do tipo "checkbox", que pode ser marcado ou desmarcado pelo usuário. O atributo "id" é usado para associar esse input com o label abaixo. -->
+            <label for="menu"><!-- A tag <label> é usada para rotular elementos de formulário. O atributo "for" associa este label ao input com o mesmo ID, permitindo que o usuário clique no rótulo para interagir com o input. -->
+                <img src="img/menu.png" alt="img do menu"><!-- A tag <img> exibe uma imagem. O atributo "src" especifica o caminho da imagem, e o atributo "alt" fornece um texto alternativo para acessibilidade. -->
+            </label>
+            <nav><!-- A tag <nav> é usada para definir uma seção de navegação. -->
+                <ul><!-- A tag <ul> é usada para criar uma lista não ordenada. -->
+                    <li><a href="index.html">home</a></li><!-- A tag <li> representa um item de lista. Dentro dele, há um link de âncora <a> com um atributo "href" que especifica o destino do link (URL). -->
+                    <li><a href="form.html">login</a></li>
+                    <li><a href="carrinho.html">carrinho</a></li>
+                    <li><a href="produto.html">ultimo produto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <footer class="grid_f">
+
+    </footer>
 </body>
 </html>
