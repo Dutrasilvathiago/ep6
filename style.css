@@ -11,23 +11,24 @@ body{
     grid-area: cabeca;  
     padding-left: 40px;
     border: black 2px solid;
-    background-color: silver;
+    background-color: #23282b;
 }
 .logo{ /**/ 
     width: 30px;
 }
 .grid_m{ /**/ 
     grid-area: princi;
-    background-color: silver;
+    background-color: #23282b;
+    color: whitesmoke;
 }
 .grid_f{ /**/ 
     grid-area: rod;
     border: black 2px solid;
-    background-color: silver;
+    background-color: #23282b;
 }
 .grid_a{ /**/ 
     grid-area: esquer;
     display: flex;
     border: black 2px solid;
-    background-color: silver;
+    background-color: #23282b;
 }

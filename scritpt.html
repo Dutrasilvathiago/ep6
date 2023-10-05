@@ -13,62 +13,18 @@
 
     </header>
     <main class="grid_m">
-    
-        <script>
-            function josefa(){
-    fernanda.value = parseInt(aran1.value) + parseInt(aran2.value);
-}
-    function multiplicacao(){
-    fernanda.value = parseInt(aran1.value) * parseInt(aran2.value);
-    }
-    function divisao(){ 
-        if(aran2.value == 0){
-    alert("Nao pode dividir por zero, anta!");
-     aran1.value = 0;
-        }
-      else {
-    fernanda.value = parseInt(aran1.value) / parseInt(aran2.value);
-    }
-}
-        </script>
 
         <h1>Cálculo de Soma:</h1>
-        Valor 1: <input type="text" id="aran1" value="0"><br>
-        Valor 2: <input type="text" id="aran2" value="0"><br>
+        <h2>formula: F=k*X</h2>
+        A= <input type="text" id="aran1" value="0"><br>
+        B= <input type="text" id="aran2" value="0"><br>
         <input type="button" value="Somar" onclick="josefa()">
         <input type="button" value="Multiplicar" onclick="multiplicacao()">
         <input type="button" value="Dividir" onclick="divisao()"><br>
-        Resultado: <input type="text" id="fernanda" value="0">
-
-        <h1> calculo</h1>
-
-        <h1>calculadora</h1>
-        <h2>eu sei programar em JavaScript</h2>
-        <p>
-            <span id="var_so"></span>+
-            <span id="var_vo"></span>*
-            <span id="var_t"></span>+
-            <span id="var_a"></span>=
-            <span id="var_S"></span>
-        </p>
-        <script>
-            var S = 0;
-            var so = 7;
-            var vo = 9;
-            var t = 5;
-            var a = 2;
-            var c = vo*t;
-            var b = a*t*t/2;
-            S = so+c+b
-            document.getElementById("var_so").textContent = so;
-            document.getElementById("var_vo").textContent = vo;
-            document.getElementById("var_t").textContent = t;
-            document.getElementById("var_a").textContent = a;
-            document.getElementById("var_S").textContent = S;
-        </script>
+        F= <input type="text" id="fernanda" value="0">
 
         <form>
-            <h1>O que é a força elástica?</h1> <!-- 1 -->
+            <h1>1)O que é a força elástica?</h1> <!-- 1 -->
             <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
             <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
             <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
@@ -76,77 +32,77 @@
             <button type="button" onclick="funcaoresposta()">responder</button>
             <p id="retorno"></p>
 
-            <h1>Qual é a unidade de medida da constante elástica de uma mola?</h1><!-- 2 -->
-            <input type="radio" name="resposta" value="errada"> Joules (J) <br>
-            <input type="radio" name="resposta"value="correta"> Newtons por metro (N/m) <br>
-            <input type="radio" name="resposta" value="errada"> Watts (W) <br>
-            <input type="radio" name="resposta" value="errada"> Quilogramas (kg).<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>2)Qual é a unidade de medida da constante elástica de uma mola?</h1><!-- 2 -->
+            <input type="radio" name="resposta2" value="errada2"> Joules (J) <br>
+            <input type="radio" name="resposta2"value="correta2"> Newtons por metro (N/m) <br>
+            <input type="radio" name="resposta2" value="errada2"> Watts (W) <br>
+            <input type="radio" name="resposta2" value="errada2"> Quilogramas (kg).<br>
+            <button type="button" onclick="funcaoresposta2()">responder</button>
+            <p id="retorno2"></p>
 
-            <h1>De acordo com a lei de Hooke, como a força elástica varia com a deformação de uma mola ideal?</h1><!-- 3 -->
-            <input type="radio" name="resposta" value="correta"> Varia linearmente. <br>
-            <input type="radio" name="resposta"value="errada"> Varia exponencialmente. <br>
-            <input type="radio" name="resposta" value="errada"> Não varia. <br>
-            <input type="radio" name="resposta" value="errada"> Varia inversamente.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>3)De acordo com a lei de Hooke, como a força elástica varia com a deformação de uma mola ideal?</h1><!-- 3 -->
+            <input type="radio" name="resposta3" value="correta3"> Varia linearmente. <br>
+            <input type="radio" name="resposta3"value="errada3"> Varia exponencialmente. <br>
+            <input type="radio" name="resposta3" value="errada3"> Não varia. <br>
+            <input type="radio" name="resposta3" value="errada3"> Varia inversamente.<br>
+            <button type="button" onclick="funcaoresposta3()">responder</button>
+            <p id="retorno3"></p>
 
-            <h1>Quando uma mola é esticada, qual tipo de energia está associada à deformação elástica?</h1><!-- 4 -->
-            <input type="radio" name="resposta" value="errada">  Energia cinética. <br>
-            <input type="radio" name="resposta"value="errada"> Energia potencial gravitacional. <br>
-            <input type="radio" name="resposta" value="errada">  Energia térmica. <br>
-            <input type="radio" name="resposta" value="correta"> Energia potencial elástica.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>4)Quando uma mola é esticada, qual tipo de energia está associada à deformação elástica?</h1><!-- 4 -->
+            <input type="radio" name="resposta4" value="errada4">  Energia cinética. <br>
+            <input type="radio" name="resposta4"value="errada4"> Energia potencial gravitacional. <br>
+            <input type="radio" name="resposta4" value="errada4">  Energia térmica. <br>
+            <input type="radio" name="resposta4" value="correta4"> Energia potencial elástica.<br>
+            <button type="button" onclick="funcaoresposta4()">responder</button>
+            <p id="retorno4"></p>
 
-            <h1>Qual é a fórmula que descreve a força elástica em uma mola ideal de acordo com a lei de Hooke?</h1><!-- 5 -->
-            <input type="radio" name="resposta" value="errada">  F = mg. <br>
-            <input type="radio" name="resposta"value="correta">  F = kx. <br>
-            <input type="radio" name="resposta" value="errada">  F = ma. <br>
-            <input type="radio" name="resposta" value="errada"> F = pVg.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>5)Qual é a fórmula que descreve a força elástica em uma mola ideal de acordo com a lei de Hooke?</h1><!-- 5 -->
+            <input type="radio" name="resposta5" value="errada5">  F = mg. <br>
+            <input type="radio" name="resposta5"value="correta5">  F = kx. <br>
+            <input type="radio" name="resposta5" value="errada5">  F = ma. <br>
+            <input type="radio" name="resposta5" value="errada5"> F = pVg.<br>
+            <button type="button" onclick="funcaoresposta5()">responder</button>
+            <p id="retorno5"></p>
 
-            <h1>O que acontece com a constante elástica de uma mola quando a mola é mais rígida?</h1><!-- 6 -->
-            <input type="radio" name="resposta" value="correta">  A constante elástica aumenta. <br>
-            <input type="radio" name="resposta"value="errada"> A constante elástica diminui. <br>
-            <input type="radio" name="resposta" value="errada">A constante elástica permanece a mesma. <br>
-            <input type="radio" name="resposta" value="errada">  A constante elástica se torna zero.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>6)O que acontece com a constante elástica de uma mola quando a mola é mais rígida?</h1><!-- 6 -->
+            <input type="radio" name="resposta6" value="correta6">  A constante elástica aumenta. <br>
+            <input type="radio" name="resposta6"value=" errada6"> A constante elástica diminui. <br>
+            <input type="radio" name="resposta6" value="errada6">A constante elástica permanece a mesma. <br>
+            <input type="radio" name="resposta6" value="errada6">  A constante elástica se torna zero.<br>
+            <button type="button" onclick="funcaoresposta6()">responder</button>
+            <p id="retorno6"></p>
 
-            <h1>Qual é a unidade de medida da deformação em uma mola?</h1><!-- 7 -->
-            <input type="radio" name="resposta" value="errada">  Joules (J) <br>
-            <input type="radio" name="resposta"value="correta"> Metros (m). <br>
-            <input type="radio" name="resposta" value="errada"> Newtons por metro (N/m). <br>
-            <input type="radio" name="resposta" value="errada"> Radianos (rad).<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>7)Qual é a unidade de medida da deformação em uma mola?</h1><!-- 7 -->
+            <input type="radio" name="resposta7" value="errada7">  Joules (J) <br>
+            <input type="radio" name="resposta7"value="correta7"> Metros (m). <br>
+            <input type="radio" name="resposta7" value="errada7"> Newtons por metro (N/m). <br>
+            <input type="radio" name="resposta7" value="errada7"> Radianos (rad).<br>
+            <button type="button" onclick="funcaoresposta7()">responder</button>
+            <p id="retorno7"></p>
 
-            <h1>Quando uma mola é comprimida, em que direção ela exerce a força elástica?</h1><!-- 8 -->
-            <input type="radio" name="resposta" value="errada"> para cima <br>
-            <input type="radio" name="resposta"value="errada"> para baixo <br>
-            <input type="radio" name="resposta" value="correta">  Na direção da deformação. <br>
-            <input type="radio" name="resposta" value="errada"> Em qualquer direção.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>8)Quando uma mola é comprimida, em que direção ela exerce a força elástica?</h1><!-- 8 -->
+            <input type="radio" name="resposta8" value="errada8"> para cima <br>
+            <input type="radio" name="resposta8"value="errada8"> para baixo <br>
+            <input type="radio" name="resposta8" value="correta8">  Na direção da deformação. <br>
+            <input type="radio" name="resposta8" value="errada8"> Em qualquer direção.<br>
+            <button type="button" onclick="funcaoresposta8()">responder</button>
+            <p id="retorno8"></p>
 
-            <h1>Qual é o objetivo principal da lei de Hooke em relação às molas?</h1><!-- 9 -->
-            <input type="radio" name="resposta" value="errada"> Descrever como as molas funcionam.<br>
-            <input type="radio" name="resposta"value="errada">  Descrever como a gravidade afeta as molas. <br>
-            <input type="radio" name="resposta" value="errada"> Descrever como as molas armazenam energia térmica. <br>
-            <input type="radio" name="resposta" value="correta"> Descrever a relação entre a força elástica e a deformação em molas.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>9)Qual é o objetivo principal da lei de Hooke em relação às molas?</h1><!-- 9 -->
+            <input type="radio" name="resposta9" value="errada9"> Descrever como as molas funcionam.<br>
+            <input type="radio" name="resposta9"value="errada9">  Descrever como a gravidade afeta as molas. <br>
+            <input type="radio" name="resposta9" value="errada9"> Descrever como as molas armazenam energia térmica. <br>
+            <input type="radio" name="resposta9" value="correta9"> Descrever a relação entre a força elástica e a deformação em molas.<br>
+            <button type="button" onclick="funcaoresposta9()">responder</button>
+            <p id="retorno9"></p>
 
-            <h1>O que acontece com a força elástica quando uma mola é esticada além do seu limite elástico?</h1><!-- 10 -->
-            <input type="radio" name="resposta" value="errada">  A força elástica continua a aumentar linearmente. <br>
-            <input type="radio" name="resposta"value="errada">A força elástica diminui. <br>
-            <input type="radio" name="resposta" value="correta">  A mola quebra. <br>
-            <input type="radio" name="resposta" value="errada"> A força elástica torna-se zero.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
-            <p id="retorno"></p>
+            <h1>10)O que acontece com a força elástica quando uma mola é esticada além do seu limite elástico?</h1><!-- 10 -->
+            <input type="radio" name="resposta0" value="errada0">  A força elástica continua a aumentar linearmente. <br>
+            <input type="radio" name="resposta0"value="errada0">A força elástica diminui. <br>
+            <input type="radio" name="resposta0" value="correta0">  A mola quebra. <br>
+            <input type="radio" name="resposta0" value="errada0"> A força elástica torna-se zero.<br>
+            <button type="button" onclick="funcaoresposta0()">responder</button>
+            <p id="retorno0"></p>
         </form>
 
         <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
