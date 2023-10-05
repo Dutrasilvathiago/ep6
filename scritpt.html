@@ -13,6 +13,35 @@
 
     </header>
     <main class="grid_m">
+    
+        <script>
+            function josefa(){
+    fernanda.value = parseInt(aran1.value) + parseInt(aran2.value);
+}
+    function multiplicacao(){
+    fernanda.value = parseInt(aran1.value) * parseInt(aran2.value);
+    }
+    function divisao(){ 
+        if(aran2.value == 0){
+    alert("Nao pode dividir por zero, anta!");
+     aran1.value = 0;
+        }
+      else {
+    fernanda.value = parseInt(aran1.value) / parseInt(aran2.value);
+    }
+}
+        </script>
+
+        <h1>Cálculo de Soma:</h1>
+        Valor 1: <input type="text" id="aran1" value="0"><br>
+        Valor 2: <input type="text" id="aran2" value="0"><br>
+        <input type="button" value="Somar" onclick="josefa()">
+        <input type="button" value="Multiplicar" onclick="multiplicacao()">
+        <input type="button" value="Dividir" onclick="divisao()"><br>
+        Resultado: <input type="text" id="fernanda" value="0">
+
+        <h1> calculo</h1>
+
         <h1>calculadora</h1>
         <h2>eu sei programar em JavaScript</h2>
         <p>

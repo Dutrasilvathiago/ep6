@@ -16,3 +16,4 @@ function funcaoresposta(){
 function mudar(objeto,imagem) {
     lam.src = imagem;
 }
+   
