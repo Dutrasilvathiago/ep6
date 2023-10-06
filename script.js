@@ -158,19 +158,61 @@ function mudar(objeto,imagem) {
 //fim img interativa
 
    //contas
-function josefa(){
-    fernanda.value = parseInt(aran1.value) + parseInt(aran2.value);
-}
-    function multiplicacao(){
-    fernanda.value = parseInt(aran1.value) * parseInt(aran2.value);
+function forcaelastica(){
+    var a = vara.value;
+    var b = varb.value;
+    var f = varf.value;
+
+    var r = a*b;
+
+    if(a == 0){
+        alert("A deve ser diferente de 0")
     }
-    function divisao(){ 
-        if(aran2.value == 0){
-    alert("Nao pode dividir por zero, anta!");
-     aran1.value = 0;
+    else{
+        if(f == r){
+            alert("acertou")
         }
-      else {
-    fernanda.value = parseInt(aran1.value) / parseInt(aran2.value);
+        else{
+            alert("errou, para resolver transforme os centimetros para metros!")
+        }
+    }
+}
+function forcaelastica2(){
+    var c = varc.value;
+    var d = vard.value;
+    var x = varx.value;
+
+    var r2 = c*d;
+
+    if(c == 0){
+        alert("A deve ser diferente de 0")
+    }
+    else{
+        if(x == r2){
+            alert("acertou")
+        }
+        else{
+            alert("errou")
+        }
+    }
+}
+function forcaelastica3(){
+    var e = vare.value;
+    var y = vary.value;
+    var z = varz.value;
+
+    var r3 = e*y;
+
+    if(e == 0){
+        alert("A deve ser diferente de 0")
+    }
+    else{
+        if(z == r3){
+            alert("acertou")
+        }
+        else{
+            alert("errou")
+        }
     }
 }
 //fim contas

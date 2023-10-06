@@ -5,23 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>força elástica</title>
 </head>
 <body>
         <script src="script.js"></script>
     <header class="grid_h">
-
+        <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
+        onmouseout="mudar('lam', 'img/esticada.jpeg')">
+        <img src="img/apertada.jpeg" alt="" id="lam"></a>
     </header>
     <main class="grid_m">
 
-        <h1>Cálculo de Soma:</h1>
-        <h2>formula: F=k*X</h2>
-        A= <input type="text" id="aran1" value="0"><br>
-        B= <input type="text" id="aran2" value="0"><br>
-        <input type="button" value="Somar" onclick="josefa()">
-        <input type="button" value="Multiplicar" onclick="multiplicacao()">
-        <input type="button" value="Dividir" onclick="divisao()"><br>
-        F= <input type="text" id="fernanda" value="0">
+        1)Uma mola possui constante elástica cujo valor é de 50 N/m. Se a comprimirmos em 20 cm, qual é o valor da força elástica obtida? <br>
+        formula: F=k*X <br>
+        k= <input type="text" id="vara" value="0"><br>
+        x= <input type="text" id="varb" value="0"><br>
+        <br>
+        F= <input type="text" id="varf" value="0"> <br>
+        <button type="button" onclick="forcaelastica()">calcular</button>
+        <br><br>
+        2)Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? <br>
+        formula: F=k*X <br>
+        k= <input type="text" id="varc" value="0"><br>
+        x= <input type="text" id="vard" value="0"><br>
+        <br>
+        F= <input type="text" id="varx" value="0"> <br>
+        <button type="button" onclick="forcaelastica2()">calcular</button>
+        <br><br>
+        3)30 é a elongação da tira. O máximo de força atingido pelo atleta, sabendo que a constante elástica da tira é de 300 N/m e que obedece à lei de Hooke, é, em N: <br>
+        k= <input type="text" id="vare" value="0"><br>
+        x= <input type="text" id="vary" value="0"><br>
+        <br>
+        F= <input type="text" id="varz" value="0"> <br>
+        <button type="button" onclick="forcaelastica3()">calcular</button>
 
         <form>
             <h1>1)O que é a força elástica?</h1> <!-- 1 -->
@@ -105,9 +121,6 @@
             <p id="retorno0"></p>
         </form>
 
-        <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
-        onmouseout="mudar('lam', 'img/esticada.jpeg')">
-        <img src="img/apertada.jpeg" alt="" id="lam"></a>
     </main>
     <aside class="grid_a"><!-- A tag <aside> é usada para criar uma seção lateral que contém conteúdo relacionado, como anúncios ou links de navegação. Neste caso, ele tem a classe "grid_a". -->
         <div class="nav_mobile"><!-- Aqui, um <div> é usado para agrupar elementos relacionados e estilizá-los juntos. Ele tem a classe "nav_mobile". -->

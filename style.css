@@ -12,6 +12,7 @@ body{
     padding-left: 40px;
     border: black 2px solid;
     background-color: #23282b;
+    text-align: center;
 }
 .logo{ /**/ 
     width: 30px;
@@ -32,3 +33,7 @@ body{
     border: black 2px solid;
     background-color: #23282b;
 }
+    button{
+        background-color: rgb(53, 172, 53);
+        width: 100px;
+    }
