@@ -1,9 +1,9 @@
 body{
     display: grid; /**/ 
     grid-template-areas: /**/ 
-    "cabeca cabeca cabeca"/**/ 
-    "esquer princi princi"/**/ 
-    "rod rod rod";/**/ 
+    " cabeca cabeca"/**/ 
+    " princi princi"/**/ 
+    " rod rod";/**/ 
     grid-template-columns: auto auto auto ;/**/ 
     grid-template-rows: auto auto auto;/**/ 
 }
@@ -12,24 +12,18 @@ body{
     padding-left: 40px;
     border: black 2px solid;
     background-color: #23282b;
-    text-align: center;
-}
-.logo{ /**/ 
-    width: 30px;
+    display: flex;
+    color: whitesmoke;
+    font-size: 18px;
 }
 .grid_m{ /**/ 
     grid-area: princi;
     background-color: #23282b;
     color: whitesmoke;
+    font-size: 19px;
 }
 .grid_f{ /**/ 
     grid-area: rod;
-    border: black 2px solid;
-    background-color: #23282b;
-}
-.grid_a{ /**/ 
-    grid-area: esquer;
-    display: flex;
     border: black 2px solid;
     background-color: #23282b;
 }

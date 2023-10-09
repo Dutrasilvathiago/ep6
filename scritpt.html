@@ -13,6 +13,25 @@
         <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
         onmouseout="mudar('lam', 'img/esticada.jpeg')">
         <img src="img/apertada.jpeg" alt="" id="lam"></a>
+        <p>A força elástica é aquela que surge a partir da deformação (compressão ou distensão) de uma mola, ou de algum outro corpo com propriedades elásticas. <br>
+
+            Trata-se de uma força restauradora, isto é, procura sempre compensar, desfazer, a deformação que foi imposta. Assim, a mola sempre tenta voltar a seu comprimento inicial, retornando à sua posição de equilíbrio. <br>
+            
+            Por exemplo, considerando uma mola com uma de suas extremidades fixa: se puxarmos a outra extremidade da mola, distendendo-a, a mola nos puxará no sentido da extremidade fixa. <br>
+        
+            Se apertarmos a mola, comprimindo-a, ela nos empurrará, a fim de restaurar o seu comprimento inicial. <br>
+        
+            Empiricamente, constata-se que essa força exercida pela mola é diretamente proporcional ao seu deslocamento da posição de equilíbrio, estando ela comprimida ou distendida. Portanto: <br>
+            
+            F=k*x <br>
+            
+            Essa equação é conhecida como Lei de Hooke, em homenagem a Robert Hooke, responsável por formulá-la. <br>
+            
+            Nela, k é a constante elástica da mola, e sua unidade é N/m no Sistema Internacional. Tal constante elástica representa a “dureza” da mola. <br>
+            
+            O deslocamento, ou deformação, x, mede a distância da extremidade da mola com relação à sua posição de equilíbrio, ou seja, é a diferença entre o comprimento e o comprimento relaxado. <br>
+            
+            Uma mola com k alto necessitará de mais força aplicada para obter o mesmo deslocamento, e, portanto, é considerada dura (de difícil deformação). Já uma mola com k baixo, será deformada com uma força menor, e, portanto, é considerada mole (de fácil deformação).</p>
     </header>
     <main class="grid_m">
 
@@ -21,8 +40,8 @@
         k= <input type="text" id="vara" value="0"><br>
         x= <input type="text" id="varb" value="0"><br>
         <br>
-        F= <input type="text" id="varf" value="0"> <br>
-        <button type="button" onclick="forcaelastica()">calcular</button>
+         F= <input type="text" id="varf" value="0"> <br>
+        <button type="button" value="multiplicar" onclick="forcaelastica()">calcular</button>
         <br><br>
         2)Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? <br>
         formula: F=k*X <br>
@@ -122,22 +141,6 @@
         </form>
 
     </main>
-    <aside class="grid_a"><!-- A tag <aside> é usada para criar uma seção lateral que contém conteúdo relacionado, como anúncios ou links de navegação. Neste caso, ele tem a classe "grid_a". -->
-        <div class="nav_mobile"><!-- Aqui, um <div> é usado para agrupar elementos relacionados e estilizá-los juntos. Ele tem a classe "nav_mobile". -->
-            <input type="checkbox" id="menu"> <!-- A tag <input> cria um campo de entrada. Neste caso, é do tipo "checkbox", que pode ser marcado ou desmarcado pelo usuário. O atributo "id" é usado para associar esse input com o label abaixo. -->
-            <label for="menu"><!-- A tag <label> é usada para rotular elementos de formulário. O atributo "for" associa este label ao input com o mesmo ID, permitindo que o usuário clique no rótulo para interagir com o input. -->
-                <img src="img/menu.png" alt="img do menu"><!-- A tag <img> exibe uma imagem. O atributo "src" especifica o caminho da imagem, e o atributo "alt" fornece um texto alternativo para acessibilidade. -->
-            </label>
-            <nav><!-- A tag <nav> é usada para definir uma seção de navegação. -->
-                <ul><!-- A tag <ul> é usada para criar uma lista não ordenada. -->
-                    <li><a href="index.html">home</a></li><!-- A tag <li> representa um item de lista. Dentro dele, há um link de âncora <a> com um atributo "href" que especifica o destino do link (URL). -->
-                    <li><a href="form.html">login</a></li>
-                    <li><a href="carrinho.html">carrinho</a></li>
-                    <li><a href="produto.html">ultimo produto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
     <footer class="grid_f">
 
     </footer>

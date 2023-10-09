@@ -159,23 +159,7 @@ function mudar(objeto,imagem) {
 
    //contas
 function forcaelastica(){
-    var a = vara.value;
-    var b = varb.value;
-    var f = varf.value;
-
-    var r = a*b;
-
-    if(a == 0){
-        alert("A deve ser diferente de 0")
-    }
-    else{
-        if(f == r){
-            alert("acertou")
-        }
-        else{
-            alert("errou, para resolver transforme os centimetros para metros!")
-        }
-    }
+ varf.value = parseFloat(vara.value) * parseFloat(varb.value)
 }
 function forcaelastica2(){
     var c = varc.value;
