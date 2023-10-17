@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>força elástica</title>
 </head>
-<body>
+<body onload="inclui_nome()">
         <script src="script.js"></script>
     <header class="grid_h">
         <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
@@ -35,13 +35,16 @@
     </header>
     <main class="grid_m">
 
+        <p id="marcacao_nome"></p>
+
+            <form>
         1)Uma mola possui constante elástica cujo valor é de 50 N/m. Se a comprimirmos em 20 cm, qual é o valor da força elástica obtida? <br>
         formula: F=k*X <br>
         k= <input type="text" id="vara" value="0"><br>
         x= <input type="text" id="varb" value="0"><br>
         <br>
          F= <input type="text" id="varf" value="0"> <br>
-        <button type="button" value="multiplicar" onclick="forcaelastica()">calcular</button>
+         <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
         <br><br>
         2)Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? <br>
         formula: F=k*X <br>
@@ -49,22 +52,21 @@
         x= <input type="text" id="vard" value="0"><br>
         <br>
         F= <input type="text" id="varx" value="0"> <br>
-        <button type="button" onclick="forcaelastica2()">calcular</button>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br>
         <br><br>
         3)30 é a elongação da tira. O máximo de força atingido pelo atleta, sabendo que a constante elástica da tira é de 300 N/m e que obedece à lei de Hooke, é, em N: <br>
         k= <input type="text" id="vare" value="0"><br>
         x= <input type="text" id="vary" value="0"><br>
         <br>
         F= <input type="text" id="varz" value="0"> <br>
-        <button type="button" onclick="forcaelastica3()">calcular</button>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
 
-        <form>
             <h1>1)O que é a força elástica?</h1> <!-- 1 -->
             <input type="radio" name="resposta" value="errada"> Uma força que age apenas em objetos elásticos. <br>
             <input type="radio" name="resposta"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
             <input type="radio" name="resposta" value="errada"> Uma força que só ocorre em molas. <br>
             <input type="radio" name="resposta" value="errada"> Uma força gravitacional.<br>
-            <button type="button" onclick="funcaoresposta()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno"></p>
 
             <h1>2)Qual é a unidade de medida da constante elástica de uma mola?</h1><!-- 2 -->
@@ -72,7 +74,7 @@
             <input type="radio" name="resposta2"value="correta2"> Newtons por metro (N/m) <br>
             <input type="radio" name="resposta2" value="errada2"> Watts (W) <br>
             <input type="radio" name="resposta2" value="errada2"> Quilogramas (kg).<br>
-            <button type="button" onclick="funcaoresposta2()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno2"></p>
 
             <h1>3)De acordo com a lei de Hooke, como a força elástica varia com a deformação de uma mola ideal?</h1><!-- 3 -->
@@ -80,7 +82,7 @@
             <input type="radio" name="resposta3"value="errada3"> Varia exponencialmente. <br>
             <input type="radio" name="resposta3" value="errada3"> Não varia. <br>
             <input type="radio" name="resposta3" value="errada3"> Varia inversamente.<br>
-            <button type="button" onclick="funcaoresposta3()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno3"></p>
 
             <h1>4)Quando uma mola é esticada, qual tipo de energia está associada à deformação elástica?</h1><!-- 4 -->
@@ -88,7 +90,7 @@
             <input type="radio" name="resposta4"value="errada4"> Energia potencial gravitacional. <br>
             <input type="radio" name="resposta4" value="errada4">  Energia térmica. <br>
             <input type="radio" name="resposta4" value="correta4"> Energia potencial elástica.<br>
-            <button type="button" onclick="funcaoresposta4()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno4"></p>
 
             <h1>5)Qual é a fórmula que descreve a força elástica em uma mola ideal de acordo com a lei de Hooke?</h1><!-- 5 -->
@@ -96,7 +98,7 @@
             <input type="radio" name="resposta5"value="correta5">  F = kx. <br>
             <input type="radio" name="resposta5" value="errada5">  F = ma. <br>
             <input type="radio" name="resposta5" value="errada5"> F = pVg.<br>
-            <button type="button" onclick="funcaoresposta5()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno5"></p>
 
             <h1>6)O que acontece com a constante elástica de uma mola quando a mola é mais rígida?</h1><!-- 6 -->
@@ -104,15 +106,16 @@
             <input type="radio" name="resposta6"value=" errada6"> A constante elástica diminui. <br>
             <input type="radio" name="resposta6" value="errada6">A constante elástica permanece a mesma. <br>
             <input type="radio" name="resposta6" value="errada6">  A constante elástica se torna zero.<br>
-            <button type="button" onclick="funcaoresposta6()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno6"></p>
 
             <h1>7)Qual é a unidade de medida da deformação em uma mola?</h1><!-- 7 -->
-            <input type="radio" name="resposta7" value="errada7">  Joules (J) <br>
+            <input type="ra <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>dio" name="resposta7" value="errada7">  Joules (J) <br>
             <input type="radio" name="resposta7"value="correta7"> Metros (m). <br>
             <input type="radio" name="resposta7" value="errada7"> Newtons por metro (N/m). <br>
             <input type="radio" name="resposta7" value="errada7"> Radianos (rad).<br>
-            <button type="button" onclick="funcaoresposta7()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno7"></p>
 
             <h1>8)Quando uma mola é comprimida, em que direção ela exerce a força elástica?</h1><!-- 8 -->
@@ -120,7 +123,7 @@
             <input type="radio" name="resposta8"value="errada8"> para baixo <br>
             <input type="radio" name="resposta8" value="correta8">  Na direção da deformação. <br>
             <input type="radio" name="resposta8" value="errada8"> Em qualquer direção.<br>
-            <button type="button" onclick="funcaoresposta8()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno8"></p>
 
             <h1>9)Qual é o objetivo principal da lei de Hooke em relação às molas?</h1><!-- 9 -->
@@ -128,7 +131,7 @@
             <input type="radio" name="resposta9"value="errada9">  Descrever como a gravidade afeta as molas. <br>
             <input type="radio" name="resposta9" value="errada9"> Descrever como as molas armazenam energia térmica. <br>
             <input type="radio" name="resposta9" value="correta9"> Descrever a relação entre a força elástica e a deformação em molas.<br>
-            <button type="button" onclick="funcaoresposta9()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno9"></p>
 
             <h1>10)O que acontece com a força elástica quando uma mola é esticada além do seu limite elástico?</h1><!-- 10 -->
@@ -136,8 +139,11 @@
             <input type="radio" name="resposta0"value="errada0">A força elástica diminui. <br>
             <input type="radio" name="resposta0" value="correta0">  A mola quebra. <br>
             <input type="radio" name="resposta0" value="errada0"> A força elástica torna-se zero.<br>
-            <button type="button" onclick="funcaoresposta0()">responder</button>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             <p id="retorno0"></p>
+
+            <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
         </form>
 
     </main>
