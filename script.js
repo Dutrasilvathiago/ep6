@@ -54,7 +54,7 @@ function funcao_resposta(){
         contador = contador + 1;
         }
         else{
-        document.getElementById("resp_errada_5").innerHTML = "Errada, pois: <img src='img/formula.png' width='100px' height='200px'/>"
+        document.getElementById("resp_errada_5").innerHTML = "Errada, pois: <img src='img/formula.png' width='100px' height='50px'/>"
 
         }
         if(resp6.value == "correta"){
@@ -62,7 +62,7 @@ function funcao_resposta(){
         contador = contador + 1;
         }
         else{
-        document.getElementById("resp_errada_6").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+        document.getElementById("resp_errada_6").innerHTML = "Errada, pois ela só aumenta!"
 
         }
         if(resp7.value == "correta"){
@@ -70,7 +70,7 @@ function funcao_resposta(){
         contador = contador + 1;
         }
         else{
-        document.getElementById("resp_errada_7").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+        document.getElementById("resp_errada_7").innerHTML = "Errada, não são Newtons, agora são metros!"
 
         }
         if(resp8.value == "correta"){
@@ -78,7 +78,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+            document.getElementById("resp_errada_8").innerHTML = "Errada, pois sera sempre na direção ocorrida!"
 
         }
         if(resp9.value == "correta"){
@@ -86,7 +86,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_9").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+            document.getElementById("resp_errada_9").innerHTML = "Errada, ela visa mostrar entre força elastica e deformação de molas!"
 
         }
         if(resp0.value == "correta"){
@@ -94,7 +94,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_0").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+            document.getElementById("resp_errada_0").innerHTML = "Errada, pois a mola e rigida então se quebra!"
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
     }
