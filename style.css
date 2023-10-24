@@ -19,9 +19,9 @@ body{
 }
 .grid_m{ /**/ 
     grid-area: princi;
-    background-color: #f0f0f0;
-    background-image: linear-gradient(135deg, #f0f0f0, #c0c0c0);
-    color: black;
+    background-color: #fff;
+    background-image: linear-gradient(135deg, #333, #c0c0c0);
+    color: #333;
     font-size: 19px;
 }
 .grid_f{ /**/ 
@@ -68,6 +68,5 @@ button:hover {
   
   /* Adicione imagens responsivas */
   img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
   }

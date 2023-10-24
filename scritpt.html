@@ -10,9 +10,9 @@
 <body onload="inclui_nome()">
         <script src="script.js"></script>
     <header class="grid_h">
-        <a onmouseover="mudar('lam', 'img/apertada.jpeg')"
-        onmouseout="mudar('lam', 'img/esticada.jpeg')">
-        <img src="img/apertada.jpeg" alt="" id="lam"></a>
+        <a onmouseover="mudar('lam', 'img/apertada.png')"
+        onmouseout="mudar('lam', 'img/esticada.png')">
+        <img src="img/apertada.png" alt="" id="lam"></a>
         <p>A força elástica é aquela que surge a partir da deformação (compressão ou distensão) de uma mola, ou de algum outro corpo com propriedades elásticas. <br>
 
             Trata-se de uma força restauradora, isto é, procura sempre compensar, desfazer, a deformação que foi imposta. Assim, a mola sempre tenta voltar a seu comprimento inicial, retornando à sua posição de equilíbrio. <br>
@@ -39,29 +39,29 @@
        
        <h1>1)Uma mola possui constante elástica cujo valor é de 50 N/m. Se a comprimirmos em 20 cm, qual é o valor da força elástica obtida?</h1>  <br>
         formula: F=k*X <br>
-        k= <input type="text" name="resposta11" value="0"><br>
-        x= <input type="text" name="resposta11" value="0"><br>
+        k= <input type="text" id="vara" value="0"><br>
+        x= <input type="text" id="varb" value="0"><br>
         <br>
-         F= <input type="text" name="resposta11" value="0"> <br>
-         <p id="resp_correta_11" class="verde"></p><p id="resp_errada_11" class="vermelho"></p><br>
-         
+         F= <input type="text" id="varf" value="0"> <br>
+         <button type="button" value="multiplicar" onclick="forcaelastica()">calcular</button>    
+
         <br>
         <h1>2)Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? </h1><br>
         formula: F=k*X <br>
-        k= <input type="text" name="resposta12" value="0"><br>
-        x= <input type="text" name="resposta12" value="0"><br>
-        <br>
-        F= <input type="text" name="resposta12" value="0"> <br>
-        <p id="resp_correta_12" class="verde"></p><p id="resp_errada_12" class="vermelho"></p><br>
+         k= <input type="text" id="varc" value="0"><br>
+         x= <input type="text" id="vard" value="0"><br>
+         <br>
+         F= <input type="text" id="varx" value="0"> <br>
+        <button type="button" value="multiplicar" onclick="forcaelastica2()">calcular</button>
         
         <br>
        <h1>3)30 é a elongação da tira. O máximo de força atingido pelo atleta, sabendo que a constante elástica da tira é de 300 N/m e que obedece à lei de Hooke, é, em N:</h1>  <br>
        formula: F=k*X <br>
-       k= <input type="text" name="resposta13" value="0"><br>
-        x= <input type="text" name="resposta13" value="0"><br>
+          k= <input type="text" id="vare" value="0"><br>
+        x= <input type="text" id="vary" value="0"><br>
         <br>
-        F= <input type="text" name="resposta13" value="0"> <br>
-        <p id="resp_correta_13" class="verde"></p><p id="resp_errada_13" class="vermelho"></p><br>
+        F= <input type="text" id="varz" value="0"> <br>
+        <button type="button" value="multiplicar" onclick="forcaelastica3()">calcular</button>
 
             <h1>1)O que é a força elástica?</h1> <!-- 1 -->
             <input type="radio" name="resposta1" value="errada"> Uma força que age apenas em objetos elásticos. <br>
