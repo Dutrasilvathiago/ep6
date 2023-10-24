@@ -1,79 +1,84 @@
 body{
-    display: grid; /**/ 
-    grid-template-areas: /**/ 
-    " cabeca cabeca sec"/**/
-    " princi princi princi"/**/ 
-    " rod rod rod";/**/ 
-    grid-template-columns: auto auto auto ;/**/ 
-    grid-template-rows: auto auto auto;/**/ 
+  display: grid; /* Define um grid layout */
+  grid-template-areas: /* Define a estrutura do grid usando áreas */
+  "cabeca cabeca sec"
+  "princi princi princi"
+  "rod rod rod";
+  grid-template-columns: auto auto auto ; /* Define três colunas com largura automática */
+  grid-template-rows: auto auto auto; /* Define três linhas com altura automática */
 }
-.grid_h{ /**/ 
-    grid-area: cabeca;  
-    background-color: #333;
-    background-image: linear-gradient(135deg, #333, #383232);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
+
+.grid_h{ /* Classe para a área "cabeca" */
+  grid-area: cabeca;  /* Define a área do grid como "cabeca" */
+  background-color: #333;  /* Cor de fundo cinza escuro */
+  background-image: linear-gradient(135deg, #333, #383232);  /* Gradiente de fundo */
+  color: #fff;  /* Cor do texto branca */
+  padding: 20px;  /* Espaçamento interno de 20px */
+  text-align: center;  /* Alinhamento central do texto */
+  font-size: 18px;  /* Tamanho da fonte de 18px */
+  font-weight: bold;  /* Texto em negrito */
+  display: flex;  /* Define o elemento como um contêiner flexível */
 }
 section{
-  display: none;
+  display: none;  /* remove o section */
 }
-.grid_m{ /**/ 
-    grid-area: princi;
-    background-color: #fff;
-    background-image: linear-gradient(135deg, #333, #c0c0c0, #333);
-    color: #333;
-    font-size: 19px;
+.grid_m{ /* Classe para a área "princi" */
+  grid-area: princi;  /* Define a área do grid como "princi" */
+  background-color: #fff;  /* Cor de fundo branca */
+  background-image: linear-gradient(135deg, #333, #c0c0c0, #333);  /* Gradiente de fundo */
+  color: #333;  /* Cor do texto cinza escuro */
+  font-size: 19px;  /* Tamanho da fonte de 19px */
 }
-.grid_f{ /**/ 
-    grid-area: rod;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  
+.grid_f{ /* Classe para a área "rod" */
+  grid-area: rod;  /* Define a área do grid como "rod" */
+  background-color: #333;  /* Cor de fundo cinza escuro */
+  color: #fff;  /* Cor do texto branca */
+  padding: 10px;  /* Espaçamento interno de 10px */
+  text-align: center;  /* Alinhamento central do texto */
 }
-.verde{
-    color: green;
+.verde {
+  color: green;  /* Define a cor do texto class .verde como verde */
 }
-.vermelho{
-    color: red;
+
+.vermelho {
+  color: red;  /* Define a cor do texto da class .vermelho como vermelho */
 }
-form{
-    max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+form {
+  max-width: 960px;  /* Define a largura máxima do formulário como 960px */
+  margin: 0 auto;  /* Centraliza o formulário horizontalmente na página */
+  padding: 20px;  /* Adiciona um preenchimento interno de 20px ao formulário */
+  background-color: #fff;  /* Define a cor de fundo do formulário como branco */
+  border-radius: 10px;  /* Adiciona um raio de borda de 10px para cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra com deslocamento, espalhamento e opacidade */
 }
-button{
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+button {
+  background-color: #3498db;  /* Cor de fundo azul */
+  color: #fff;  /* Cor do texto branca */
+  padding: 10px 20px;  /* Preenchimento de 10px no topo/baixo e 20px nos lados */
+  border: none;  /* Remove a borda do botão */
+  border-radius: 5px;  /* Adiciona um raio de borda de 5px para cantos arredondados */
+  cursor: pointer;  /* Define o cursor como uma mão para indicar um link */
+  transition: background-color 0.3s ease;  /* Efeito de transição suave na cor de fundo */
 }
+
 button:hover {
-    background-color: #2374a7;
-  }
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  p {
-    line-height: 1.6;
-  }
-  
+  background-color: #2374a7;  /* Cor de fundo mais escura quando o mouse passa por cima */
+}
+
+h1, h2, h3 {
+  color: #333;  /* Cor do texto dos cabeçalhos em cinza escuro */
+}
+
+p {
+  line-height: 1.6;  /* Espaçamento entre linhas de 1.6 para parágrafos */
+}
   /* Adicione imagens responsivas */
   .img_ {
-    width: 200px;
+    width: 200px;  /* altera o tamanho da imagem */
   }
+  /* responsividade */
   @media only screen and (max-width: 445px) { /* Estilos aplicados quando a largura da tela é no máximo 779 pixels */
     body{ /* Modifica a estrutura do grid e o estilo do corpo da página */
         grid-template-areas: /* Define o layout do grid com uma única coluna e várias linhas */
@@ -86,16 +91,16 @@ button:hover {
     .grid_h{ /* Esconde o elemento com classe .grid_h (cabeçalho) */
       display: none;
   }
-  section{
-    grid-area: sec;
-    background-color: #333;
-    background-image: linear-gradient(135deg, #333, #383232);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
+  section {
+    grid-area: sec;  /* Define a área do grid como "sec" */
+    background-color: #333;  /* Cor de fundo cinza escuro */
+    background-image: linear-gradient(135deg, #333, #383232);  /* Gradiente de fundo */
+    color: #fff;  /* Cor do texto branca */
+    padding: 20px;  /* Espaçamento interno de 20px */
+    text-align: center;  /* Alinhamento central do texto */
+    display: flex;  /* Define o elemento como um contêiner flexível */
 }
-  }
+} 
   @media only screen and (max-width: 768px) { /* Estilos aplicados quando a largura da tela é no máximo 779 pixels */
     body{ /* Modifica a estrutura do grid e o estilo do corpo da página */
         grid-template-areas: /* Define o layout do grid com uma única coluna e várias linhas */
@@ -109,27 +114,30 @@ button:hover {
       display: none;
   }
   section{
-    grid-area: sec;
-    background-color: #333;
-    background-image: linear-gradient(135deg, #333, #383232);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    font-size: 18px;
+    section {
+      grid-area: sec;  /* Define a área do grid como "sec" */
+      background-color: #333;  /* Cor de fundo cinza escuro */
+      background-image: linear-gradient(135deg, #333, #383232);  /* Gradiente de fundo */
+      color: #fff;  /* Cor do texto branca */
+      padding: 20px;  /* Espaçamento interno de 20px */
+      text-align: center;  /* Alinhamento central do texto */
+      display: flex;  /* Define o elemento como um contêiner flexível */
+    font-size: 18px; /* altera o tamanho da fonte para 18px */
+  }
 }
-  }
+}
+  /* fim responsividade */
+  /* links */
   nav {
-    background-color: #444;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
+    background-color: #444;  /* Cor de fundo cinza escuro para a barra de navegação */
+    padding: 10px;  /* Espaçamento interno de 10px */
+}
+nav a {
+    color: #fff;  /* Cor do texto dos links em branco */
+    text-decoration: none;  /* Remove a decoração de texto dos links (sublinhado, por exemplo) */
+    margin: 0 10px;  /* Margem de 0 nos lados e 10px no topo/baixo para espaçamento entre os links */
+}
+nav a:hover {
+    text-decoration: underline;  /* Adiciona um sublinhado aos links quando o mouse passa por cima */
+}
+  /* fim links */

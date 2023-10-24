@@ -37,41 +37,54 @@
         <p>A força elástica é aquela que surge a partir da deformação (compressão ou distensão) de uma mola, ou de algum outro corpo com propriedades elásticas.</p>
     </section>
     <main class="grid_m">
-    <form>
-        <p id="marcacao_nome"></p>
-       
-       <h1>1)Uma mola possui constante elástica cujo valor é de 50 N/m. Se a comprimirmos em 20 cm, qual é o valor da força elástica obtida?</h1>  <br>
-        formula: F=k*X <br>
-        k= <input type="text" id="vara" value="0"><br>
-        x= <input type="text" id="varb" value="0"><br>
-        <br>
-         F= <input type="text" id="varf" value="0"> <br>
-         <button type="button" value="multiplicar" onclick="forcaelastica()">calcular</button>    
-
-        <br>
-        <h1>2)Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? </h1><br>
-        formula: F=k*X <br>
-         k= <input type="text" id="varc" value="0"><br>
-         x= <input type="text" id="vard" value="0"><br>
-         <br>
-         F= <input type="text" id="varx" value="0"> <br>
-        <button type="button" value="multiplicar" onclick="forcaelastica2()">calcular</button>
+        <form>
+            <p id="marcacao_nome"></p>
+            
+            <!-- Pergunta 1 -->
+            <h1>1) Uma mola possui constante elástica cujo valor é de 50 N/m. Se a comprimirmos em 20 cm, qual é o valor da força elástica obtida?</h1>
+            <br>
+            <!-- Fórmula da força elástica -->
+            formula: F=k*X <br>
+            k= <input type="text" id="vara" value="0"><br> <!-- Campo para a constante elástica -->
+            x= <input type="text" id="varb" value="0"><br> <!-- Campo para a deformação -->
+            <br>
+            F= <input type="text" id="varf" value="0"> <br> <!-- Campo para o resultado do cálculo -->
+            <button type="button" value="multiplicar" onclick="forcaelastica()">calcular</button> <!-- Botão para calcular -->
+            <br>
         
+            <!-- Pergunta 2 -->
+            <h1>2) Uma mola cuja constante elástica vale 100 N/cm sofre uma deformação de 4 cm. Qual deve ser o valor da força elástica para obtermos essa deformação? </h1>
+            <br>
+            <!-- Fórmula da força elástica -->
+            formula: F=k*X <br>
+            k= <input type="text" id="varc" value="0"><br> <!-- Campo para a constante elástica -->
+            x= <input type="text" id="vard" value="0"><br> <!-- Campo para a deformação -->
+            <br>
+            F= <input type="text" id="varx" value="0"> <br> <!-- Campo para o resultado do cálculo -->
+            <button type="button" value="multiplicar" onclick="forcaelastica2()">calcular</button> <!-- Botão para calcular -->
+            <br>
+        
+            <!-- Pergunta 3 -->
+            <h1>3) 30 é a elongação da tira. O máximo de força atingido pelo atleta, sabendo que a constante elástica da tira é de 300 N/m e que obedece à lei de Hooke, é, em N:</h1>
+            <br>
+            <!-- Fórmula da força elástica -->
+            formula: F=k*X <br>
+            k= <input type="text" id="vare" value="0"><br> <!-- Campo para a constante elástica -->
+            x= <input type="text" id="vary" value="0"><br> <!-- Campo para a deformação -->
+            <br>
+            F= <input type="text" id="varz" value="0"> <br> <!-- Campo para o resultado do cálculo -->
+            <button type="button" value="multiplicar" onclick="forcaelastica3()">calcular</button> <!-- Botão para calcular -->
+        </form>
+        
+        <h1>1)O que é a força elástica?</h1> <!-- Pergunta 1 -->
+        <input type="radio" name="resposta1" value="errada"> Uma força que age apenas em objetos elásticos. <br>
+        <input type="radio" name="resposta1" value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
+        <input type="radio" name="resposta1" value="errada"> Uma força que só ocorre em molas. <br>
+        <input type="radio" name="resposta1" value="errada"> Uma força gravitacional.<br>
+        <p id="resp_correta_1" class="verde"></p> <!-- Exibição da resposta correta -->
+        <p id="resp_errada_1" class="vermelho"></p> <!-- Exibição da resposta errada -->
         <br>
-       <h1>3)30 é a elongação da tira. O máximo de força atingido pelo atleta, sabendo que a constante elástica da tira é de 300 N/m e que obedece à lei de Hooke, é, em N:</h1>  <br>
-       formula: F=k*X <br>
-          k= <input type="text" id="vare" value="0"><br>
-        x= <input type="text" id="vary" value="0"><br>
-        <br>
-        F= <input type="text" id="varz" value="0"> <br>
-        <button type="button" value="multiplicar" onclick="forcaelastica3()">calcular</button>
-
-            <h1>1)O que é a força elástica?</h1> <!-- 1 -->
-            <input type="radio" name="resposta1" value="errada"> Uma força que age apenas em objetos elásticos. <br>
-            <input type="radio" name="resposta1"value="correta"> Uma força resultante da deformação de um objeto elástico. <br>
-            <input type="radio" name="resposta1" value="errada"> Uma força que só ocorre em molas. <br>
-            <input type="radio" name="resposta1" value="errada"> Uma força gravitacional.<br>
-            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
+        <!-- E assim por diante para as demais perguntas -->
 
             <h1>2)Qual é a unidade de medida da constante elástica de uma mola?</h1><!-- 2 -->
             <input type="radio" name="resposta2" value="errada"> Joules (J) <br>
@@ -136,12 +149,13 @@
             <input type="radio" name="resposta0" value="errada"> A força elástica torna-se zero.<br>
             <p id="resp_correta_0" class="verde"></p><p id="resp_errada_0" class="vermelho"></p><br>
 
-            <p id="quantos_acertos"></p>
+            <p id="quantos_acertos"></p><!-- mostra quantos acertos você teve ao pressionar o botão abaixo -->
             <button type="button" onclick="funcao_resposta()">Responder</button>
         </form>
 
     </main>
     <footer class="grid_f">
+        <!-- links de referencias -->
         <nav><a href="https://www.querobolsa.com" target="_blank">texto base</a>
         <a href="https://exercicios.brasilescola.uol.com.br" target="_blank">perguntas</a>
     </nav>

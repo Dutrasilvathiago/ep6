@@ -1,6 +1,6 @@
 //questionario
 function funcao_resposta(){
-
+    //checa as respostas marcadas e diz se esta certo ou errado
     var resp1 = document.querySelector('input[name="resposta1"]:checked');
     var resp2 = document.querySelector('input[name="resposta2"]:checked');
     var resp3 = document.querySelector('input[name="resposta3"]:checked');
@@ -12,9 +12,9 @@ function funcao_resposta(){
     var resp9 = document.querySelector('input[name="resposta9"]:checked');
     var resp0 = document.querySelector('input[name="resposta0"]:checked');
 
-    var contador = 0;
+    var contador = 0; // Inicializa um contador para pontuação
 
-
+    //faz a verificação de cada resposta e indica a certa como correta! e a errada como errada e da uma explicação
     if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp0){
         if(resp1.value == "correta"){
             document.getElementById("resp_correta_1").innerHTML = "Correta!"
@@ -96,34 +96,34 @@ function funcao_resposta(){
         else{
             document.getElementById("resp_errada_0").innerHTML = "Errada, pois a mola e rigida então se quebra!"
         }
-        document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
+        document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!"; //indica quantas questões você acertou
     }
     else{
-            alert("não deixe questões em branco!")
+            alert("não deixe questões em branco!") //te alerta caso tenha questões não assinaladas
         }
 }   
 //fim questionario
 
 //img interativa
 function mudar(objeto,imagem) {
-    lam.src = imagem;
+    lam.src = imagem; //cria uma imagem interativa de uma mola abrindo e fechando
 }
 //fim img interativa
 //nome
 function inclui_nome() {
-    var nome_variavel = prompt("Coloque seu nome:");
+    var nome_variavel = prompt("Coloque seu nome:"); //pede para você colocar seu nome para começar a responder
     if(nome_variavel){
         document.getElementById("marcacao_nome").innerHTML = nome_variavel;
     }
     else{
-        alert("Nome não atribuido, preencha o nome.");
-        inclui_nome();
+        alert("Nome não atribuido, preencha o nome."); //se não preencher com seu nome não podera resposder
+        inclui_nome(); //puxa a função inclui_nome novamente para que você coloque seu nome
     }
 }
 //fim nome
    //contas
    function forcaelastica(){
-    varf.value = parseFloat(vara.value) * parseFloat(varb.value)
+    varf.value = parseFloat(vara.value) * parseFloat(varb.value) //mostra que o formulario esta multiplicando as variaveis
    }
    function forcaelastica2(){
        var c = varc.value;
