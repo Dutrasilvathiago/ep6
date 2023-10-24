@@ -9,31 +9,65 @@ body{
 }
 .grid_h{ /**/ 
     grid-area: cabeca;  
-    padding-left: 40px;
-    border: black 2px solid;
-    background-color: #23282b;
-    display: flex;
-    color: whitesmoke;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
     font-size: 18px;
+    font-weight: bold;
+    display: flex;
 }
 .grid_m{ /**/ 
     grid-area: princi;
-    background-color: #23282b;
-    color: whitesmoke;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(135deg, #f0f0f0, #c0c0c0);
+    color: black;
     font-size: 19px;
 }
 .grid_f{ /**/ 
     grid-area: rod;
-    border: black 2px solid;
-    background-color: #23282b;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  
 }
-    button{
-        background-color: rgb(53, 172, 53);
-        width: 100px;
-    }
 .verde{
     color: green;
 }
 .vermelho{
     color: red;
 }
+form{
+    max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #2374a7;
+  }
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Adicione imagens responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }

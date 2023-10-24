@@ -11,12 +11,14 @@ function funcao_resposta(){
     var resp8 = document.querySelector('input[name="resposta8"]:checked');
     var resp9 = document.querySelector('input[name="resposta9"]:checked');
     var resp0 = document.querySelector('input[name="resposta0"]:checked');
-
+    var resp11 = document.querySelector('input[name="resposta11"]:checked');
+    var resp12 = document.querySelector('input[name="resposta12"]:checked');
+    var resp13 = document.querySelector('input[name="resposta13"]:checked');
 
     var contador = 0;
 
 
-    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp0){
+    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp0 && resp11 && resp12 && resp13){
         if(resp1.value == "correta"){
             document.getElementById("resp_correta_1").innerHTML = "Correta!"
             contador = contador + 1;
@@ -97,6 +99,30 @@ function funcao_resposta(){
         else{
             document.getElementById("resp_errada_0").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
         }
+        if(resp11.value == "correta"){
+            document.value("resp_correta_11").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.value("resp_errada_11").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        if(resp12.value == "correta"){
+            document.value("resp_correta_12").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.value("resp_errada_12").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        if(resp13.value == "correta"){
+            document.value("resp_correta_13").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.value("resp_errada_13").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
     }
     else{
@@ -110,50 +136,6 @@ function mudar(objeto,imagem) {
     lam.src = imagem;
 }
 //fim img interativa
-
-   //contas
-function forcaelastica(){
- varf.value = parseFloat(vara.value) * parseFloat(varb.value)
-}
-function forcaelastica2(){
-    var c = varc.value;
-    var d = vard.value;
-    var x = varx.value;
-
-    var r2 = c*d;
-
-    if(c == 0){
-        alert("A deve ser diferente de 0")
-    }
-    else{
-        if(x == r2){
-            alert("acertou")
-        }
-        else{
-            alert("errou")
-        }
-    }
-}
-function forcaelastica3(){
-    var e = vare.value;
-    var y = vary.value;
-    var z = varz.value;
-
-    var r3 = e*y;
-
-    if(e == 0){
-        alert("A deve ser diferente de 0")
-    }
-    else{
-        if(z == r3){
-            alert("acertou")
-        }
-        else{
-            alert("errou")
-        }
-    }
-}
-//fim contas
 function inclui_nome() {
     var nome_variavel = prompt("Coloque seu nome:");
     if(nome_variavel){
