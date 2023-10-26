@@ -101,7 +101,7 @@ p {
     display: flex;  /* Define o elemento como um contêiner flexível */
 }
 } 
-  @media only screen and (max-width: 768px) { /* Estilos aplicados quando a largura da tela é no máximo 779 pixels */
+  @media only screen and (max-width: 769px) { /* Estilos aplicados quando a largura da tela é no máximo 779 pixels */
     body{ /* Modifica a estrutura do grid e o estilo do corpo da página */
         grid-template-areas: /* Define o layout do grid com uma única coluna e várias linhas */
         "sec"
@@ -114,7 +114,6 @@ p {
       display: none;
   }
   section{
-    section {
       grid-area: sec;  /* Define a área do grid como "sec" */
       background-color: #333;  /* Cor de fundo cinza escuro */
       background-image: linear-gradient(135deg, #333, #383232);  /* Gradiente de fundo */
@@ -124,7 +123,6 @@ p {
       display: flex;  /* Define o elemento como um contêiner flexível */
     font-size: 18px; /* altera o tamanho da fonte para 18px */
   }
-}
 }
   /* fim responsividade */
   /* links */
